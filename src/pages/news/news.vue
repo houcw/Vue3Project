@@ -1,6 +1,6 @@
 // 新闻列表
 <template>
-  <div class="homePage">
+  <div class="HomePage">
        <el-table :data="tableData" style="width: 100%">
         <el-table-column prop="date" label="日期" width="180">
         </el-table-column>

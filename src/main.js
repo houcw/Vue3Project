@@ -5,6 +5,7 @@ import router from './router/index'
 import {components,plugins} from './element'
 // 引入公共的css样式文件
 import './assets/css/global.scss'
+// vue3.0 写法
 const app = createApp(App);
 app.use(router);
 app.mount("#app");

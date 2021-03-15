@@ -3,7 +3,7 @@ import IndexPage from '@/pages/index.vue'
 export const routers =
     [
         {
-            path: "/home",
+            path: "/",
             name: "Home",
             component: IndexPage,
             children: [{

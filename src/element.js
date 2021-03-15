@@ -8,14 +8,30 @@ import {
     ElMessage,
     ElMessageBox,
     ElNotification,
-    ElButton
+    ElButton,
+    ElMenu,
+    ElMenuItem,
+    ElMenuItemGroup,
+    ElSubmenu,
+    ElIcon,
+    ElContainer,
+    ElAside,
+    ElHeader,
   } from 'element-plus';
 
 
   export const  components = [
     ElTable,
     ElTableColumn,
-    ElButton
+    ElButton,
+    ElMenu,
+    ElMenuItem,
+    ElMenuItemGroup,
+    ElSubmenu,
+    ElIcon,
+    ElContainer,
+    ElAside,
+    ElHeader,
   ]
   
   export const plugins = [

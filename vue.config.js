@@ -1,3 +1,5 @@
+
+const path = require('path')
 exports = {
     outputDir: 'dist',
     publicPath: '/',
@@ -8,7 +10,7 @@ exports = {
     // 配置 webpack-dev-server 行为。
     devServer: {
         open: process.platform === 'darwin',
-        host: '0.0.0.0',
+        host: 'localhost',
         port: 8080,
         https: false,
         hotOnly: false,
@@ -18,18 +20,16 @@ exports = {
     productionSourceMap: false,
     // css相关配置
     css: {
-      // 是否使用css分离插件 ExtractTextPlugin
-    //   extract: true, 
-      // 开启 CSS source maps?
-      sourceMap: false,
-      // css预设器配置项
-      loaderOptions: {
-          sass:{
-              prependData:`@import'./src/style/main.scss';`
-          }
-      },
-      // 启用 CSS modules for all css / pre-processor files.
-      modules: false
+        sourceMap: false,
+        loaderOptions: {
+            sass: {
+                prependData: `
+                @import "@/assets/styles/vars.scss";
+                @import "@/assets/styles/mixins.scss";
+                @import "@/assets/styles/functions.scss";
+                `
+            }
+        }
     },
     module: {
         rules: [{
