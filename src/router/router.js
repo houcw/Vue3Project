@@ -1,6 +1,6 @@
 import IndexPage from '@/pages/index.vue'
 
-export const routers =
+export default 
     [
         {
             path: "/",
@@ -27,9 +27,7 @@ export const routers =
 
         }
     ]
-export default [
-    ...routers
-]
+
 
 
 
